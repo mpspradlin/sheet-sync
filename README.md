@@ -27,28 +27,28 @@ Copy large/unwieldy Google Sheets data tabs from one sheet to {1..n} other sheet
 
 4. **Deploy to Google Cloud Functions**
 
-```bash
-gcloud functions deploy syncSheets \
-  --gen2 \
-  --region=us-central1 \
-  --runtime=nodejs20 \
-  --trigger-http \
-  --entry-point=syncSheets \
-  --allow-unauthenticated
-```
+   ```bash
+   gcloud functions deploy syncSheets \
+     --gen2 \
+     --region=us-central1 \
+     --runtime=nodejs20 \
+     --trigger-http \
+     --entry-point=syncSheets \
+     --allow-unauthenticated
+   ```
 
 ## Example Sheet mapping
 
-```javascript
-const mappings = [
-  {
-    sourceId: "SOURCE_SPREADSHEET_ID",
-    sourceSheet: "Source Sheet Name",
-    targetId: "TARGET_SPREADSHEET_ID",
-    targetSheet: "Target Sheet Name"
-  },
-];
-```
+   ```javascript
+   const mappings = [
+     {
+       sourceId: "SOURCE_SPREADSHEET_ID",
+       sourceSheet: "Source Sheet Name",
+       targetId: "TARGET_SPREADSHEET_ID",
+       targetSheet: "Target Sheet Name"
+     },
+   ];
+   ```
 
 ## Scheduling
 Use Google Cloud Scheduler to call this function on a nightly cron schedule.

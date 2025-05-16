@@ -1,6 +1,6 @@
 # Google Sheets Sync Function
 
-Copy large/unwieldy Google Sheets data tabs from one sheet to {1..n} other sheets copies data from specific sheets in one Google Spreadsheet to another. It also posts sync results to a Slack channel.
+Copy large/unwieldy Google Sheets data tabs from one sheet to {1..n} other sheets. It also posts sync results to a Slack channel.
 
 ## How It Works
 - Reads mapping of source → target sheets.

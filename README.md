@@ -15,14 +15,15 @@ Copy large/unwieldy Google Sheets data tabs from one sheet to {1..n} other sheet
    - **Do not commit this file.**
 
 2. **Environment Variables**
-   - Store your Slack webhook as an env variable:
-     ```
-     SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your/webhook/url
-     ```
+   Store your Slack webhook as an env variable:
+   ```
+   SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your/webhook/url
+   ```
 
 3. **Install dependencies**
    ```bash
    npm install
+   ```
 
 4. **Deploy to Google Cloud Functions**
 

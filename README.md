@@ -12,7 +12,7 @@ Copy large/unwieldy Google Sheets data tabs from one sheet to {1..n} other sheet
 1. **Google Cloud Service Account**
    - Create a service account with `Google Sheets API` access.
    - Download the JSON key file as `credentials.json`.
-   - **Do not commit this file.**
+   - **Do not commit this file.** Add to .gitignore and host it. 
 
 2. **Environment Variables**
    Store your Slack webhook as an env variable:

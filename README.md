@@ -48,7 +48,6 @@ Copy large/unwieldy Google Sheets data tabs from one sheet to {1..n} other sheet
           targetSheet: "Target Sheet Name"
         },
       ];
-      ```
 
 ## Scheduling
 Use Google Cloud Scheduler to call this function on a nightly cron schedule.

@@ -1,0 +1,10 @@
+{
+    "name": "sheet-sync",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "axios": "^1.8.4",
+        "google-auth-library": "^9.0.0",
+        "googleapis": "^118.0.0"
+    }
+}
